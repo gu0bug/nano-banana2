@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased overflow-x-hidden;
+  }
+}
+
+/* Custom scrollbar for webkit browsers to match the dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-indigo-950;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-fuchsia-500/50 rounded-full hover:bg-fuchsia-500/80 transition-colors;
+}
